@@ -5,15 +5,13 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: spring-petclinic
+    namespace: devsecops-dev
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      recurse: true
-    path: app
-    repoURL: https://github.com/redhat-developer/openshift-gitops-getting-started.git
-    targetRevision: main
+    path: environments/dev
+    repoURL: https://github.com/basavaraju-g/spring-petclinic-config
+    targetRevision: master
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
