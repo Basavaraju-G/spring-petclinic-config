@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../app/
 images:
-- digest: sha256:e1ec8a8a85e71e07fda8302541cdd45bd734d7122378353cbe2af595d050f9a3
+- digest: sha256:ee423521dc4531cc108893eddfb0ab3169e56d346fbd5f7c13b0487aa9a06d67
   name: quay.io/siamaksade/spring-petclinic:latest
   newName: quay.io/bgirriam/spring-petclinic
